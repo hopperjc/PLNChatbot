@@ -20,7 +20,6 @@ nlu:
 - intent: goodbye
   examples: |
     - good afternoon
-    - cu
     - good by
     - cee you later
     - good night
@@ -50,43 +49,237 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
+- intent: create_apt
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - I'd like to request an apt. with doctor
+  - want to set up an appointment with doctor
+  - please make meeting with doctor
+  - could you please create apt with doctor?
+  - could you please schedule consultation with doctor?
+  - could you please schedule apt with doctor?
+  - can you create apt with doctor?
+  - can you setup apt. with doctor?
+  - I'd like to book meeting with doctor
+  - would you create an apt. with doctor?
+  - want to request an apt. with doctor
+  - please request an appointment with doctor
+  - could you please schedule apt. with doctor?
+  - please make an consultation with doctor
+  - can you setup an apt with doctor
+  - want to make apt with doctor
+  - can you make an meeting with doctor
+  - I'd like to schedule an apt. with doctor
+  - please book appointment with doctor
+  - want to make apt. with doctor
+  - can you request an apt with doctor
+  - could you please book appointment with doctor
+  - would you make an apt with doctor
+  - please request an apt. with doctor
+  - I'd like to book an meeting with doctor
+  - want to make an apt with doctor
+  - can you request an apt. with doctor
+  - would you schedule meeting with doctor
+  - would you create appointment with doctor
+  - please schedule meeting with doctor
+  - want to request an consultation with doctor
+  - please book an appointment with doctor
+  - I'd like to setup consultation with doctor
+  - can you request consultation with doctor
+  - could you please request appointment with doctor
+  - could you please schedule an appointment with doctor
+  - could you please create an appointment with doctor
+  - can you book meeting with doctor
+  - please set up an consultation with doctor
+  - I'd like to setup an apt. with doctor
+  - would you setup meeting with doctor
+  - could you please set up an consultation with doctor
+  - could you please setup an appointment with doctor
+  - would you setup an meeting with doctor
+  - please request apt. with doctor
+  - can you create an consultation with doctor
+  - could you please setup apt with doctor
+  - could you please book apt. with doctor
+  - please book consultation with doctor
+  - I'd like to request apt with doctor
+  - would you setup apt with doctor
+  - I'd like to request meeting with doctor
+  - could you please setup an consultation with doctor
+  - would you book an meeting with doctor
+  - please set up an appointment with doctor
+  - please book meeting with doctor
+  - please set up an meeting with doctor
+  - can you make an apt with doctor
+  - would you schedule an meeting with doctor
+  - please create consultation with doctor
+  - can you setup consultation with doctor
+  - can you make apt. with doctor
+  - want to book apt with doctor
+  - would you make apt with doctor
+  - would you book consultation with doctor
+  - can you create an appointment with doctor
+  - could you please request an apt. with doctor
+  - can you book appointment with doctor
+  - would you book apt with doctor
+  - want to set up an meeting with doctor
+  - please schedule apt with doctor
+  - want to make an meeting with doctor
+  - would you request consultation with doctor
+  - can you schedule an apt. with doctor
+  - would you create meeting with doctor
+  - want to schedule an consultation with doctor
+  - please request meeting with doctor
+  - would you schedule consultation with doctor
+  - want to book an appointment with doctor
+  - would you make appointment with doctor
+  - want to schedule meeting with doctor
+  - could you please request an consultation with doctor
+  - can you setup apt with doctor
+  - please schedule an apt with doctor
+  - want to setup an consultation with doctor
+  - want to create an appointment with doctor
+  - can you make an apt. with doctor
+  - can you make consultation with doctor
+  - I'd like to schedule apt with doctor
+  - please make appointment with doctor
+  - could you please make apt with doctor
+  - want to schedule an apt with doctor
+  - please create meeting with doctor
+  - can you book an consultation with doctor
+  - I'd like to create an consultation with doctor
+  - I'd like to setup meeting with doctor
+  - I'd like to request appointment with doctor
+  - I'd like to setup apt with doctor
+  - could you please request apt with doctor
+  - want to setup consultation with doctor
+  - please schedule apt. with doctor
+  - I'd like to create meeting with doctor
+  - could you please make consultation with doctor
+  - I'd like to setup appointment with doctor
+  - would you set up an meeting with doctor
+  - please book apt with doctor
+  - would you book an appointment with doctor
+  - can you request appointment with doctor
+  - want to setup apt. with doctor
+  - want to create an meeting with doctor
+  - I'd like to make an apt with doctor
+  - would you set up an appointment with doctor
+  - would you request apt with doctor
+  - want to make an appointment with doctor
+  - could you please book meeting with doctor
+  - please request consultation with doctor
+  - would you schedule apt with doctor
+  - please setup apt. with doctor
+  - can you create an meeting with doctor
+  - want to book consultation with doctor
+  - please create apt with doctor
+  - could you please schedule an apt with doctor
+  - want to request meeting with doctor
+  - please book an apt. with doctor
+  - can you setup meeting with doctor
+  - can you book an meeting with doctor
+  - want to request consultation with doctor
+  - could you please set up an meeting with doctor
+  - want to schedule an meeting with doctor
+  - please request an meeting with doctor
+  - want to schedule consultation with doctor
+  - could you please setup meeting with doctor
+  - could you please book apt with doctor
+  - please make an meeting with doctor
+  - would you create an apt with doctor
+  - please book an apt with doctor
+  - can you setup an appointment with doctor
+  - I'd like to create an meeting with doctor
+  - please request an apt with doctor
+  - I'd like to create apt with doctor
+  - I'd like to request an appointment with doctor
+  
+-intent: confirm_specialization
+  examples: |
+  - to dentist
+  - to dermatologist
+  - to ophthalmologists
+  - to paediatrician
+  - to surgeon
+  - to orthopaedic
+  - to cardiologist
+  - to physician
+  - to gynaecologists
+  - to gastroentrologist
+  - to urologist
+  - with surgeon
+  - with dentist
+  - with paediatrician
+  - with ophthalmologists
+  - with orthopaedic
+  - with cardiologist
+  - with physician
+  - with gynaecologists
+  = with gastroentrologist
+  - with urologist
+  - dentist
+  - surgeon
+  - dermatologist
+  - orthopaedic
+  - paediatrician
+  - ophthalmologists
+  - cardiologist
+  - physician
+  - gynaecologists
+  - gastroentrologist
+  - urologist
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
-- intent: bot_challenge
+- intent: confirm_city
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - at Recife
+  - Recife
+  - Olinda
+  - at Olinda
+  - to Olinda
+  - in Olinda
+  - in Recife
+  - to Recife
+
+- intent: confirm_date
+  examples: |
+  - Sunday
+  - Monday
+  - Tuesday
+  - Wednesday
+  - Thursday
+  - Friday
+  - Saturday
+  - on Sunday
+  - on Monday
+  - on Tuesday
+  - on Wednesday
+  - on Thursday
+  - on Friday
+  - on Saturday
+  
+- intent: confirm_time
+  examples: |
+  - 00:00 am
+  - 01:00 am
+  - 02:00 am
+  - 03:00 am
+  - 04:00 am
+  - 05:00 am
+  - 06:00 am
+  - 07:00 am
+  - 08:00 am
+  - 09:00 am
+  - 10:00 am
+  - 11:00 am
+  - 12:00 pm
+  - 01:00 pm
+  - 02:00 pm
+  - 03:00 pm
+  - 04:00 pm
+  - 05:00 pm
+  - 06:00 pm
+  - 07:00 pm
+  - 08:00 pm
+  - 09:00 pm
+  - 10:00 pm
+  - 11:00 pm
