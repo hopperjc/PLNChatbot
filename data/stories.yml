@@ -2,29 +2,21 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: appoitment_1
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - intent: create_apt
+  - action: utter_apt_ask
   - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - action: utter_especialty_to
+  - intent: confirm_specialization
+  - action: utter_date
+  - intent: confirm_date
+  - action: utter_city
+  - intent: confirm_city
+  - action: utter_time
+  - intent: confirm_time
+  - action: utter_confirm
+  - intent: goodbye
+  - action: utter_bye 

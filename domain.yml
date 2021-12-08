@@ -3,31 +3,45 @@ version: "2.0"
 intents:
   - greet
   - goodbye
+  - bye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - create_apt
+  - confirm_specialization
+  - confirm_city
+  - confirm_date
+  - confirm_time
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_apt_ask:
+  - text: "wold you like to make an appointment?"
+
+  utter_apt_conf:
+  - text: "yes, i can make your appointment!"
+
+  utter_especialty_to:
+  - text: "what especialty of doctor do you need to go?"
+
+  utter_date:
+  - text: "what day of the week is best for you?"
+
+  utter_city:
+  - text: "Do you prefer the doctor to attend you in Recife or Olinda"
+
+  utter_time:
+  - text: "at what time do you need?"
+
+  utter_confimation:
+  - text: "you appontiment with the doctor is confimed." 
 
   utter_did_that_help:
   - text: "Did that help you?"
 
-  utter_happy:
-  - text: "Great, carry on!"
-
   utter_goodbye:
   - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
 
 session_config:
   session_expiration_time: 60
